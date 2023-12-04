@@ -48,6 +48,8 @@ namespace TriangleLibraryTests
         [TestCase(5000000.05, 3000000.03, 4000000.04, TriangleAngleTypeEnum.Right)]
 
         [TestCase(50000005.05005555555, 30000003.03300333333, 40000004.04004444444, TriangleAngleTypeEnum.Right)]
+        
+        [TestCase(135, 135, 135, TriangleAngleTypeEnum.Acture)]
         public void GetAngleType_VariateLength_CorrectResult(double a, double b, double c, TriangleAngleTypeEnum expected)
         {
             Assert.AreEqual(expected, TriangleHelper.GetAngleType(a, b, c));

@@ -48,17 +48,14 @@
         private static void MoveMaxSideIntoFirst(ref double a, ref double b, ref double c)
         {
             var oldA = a;
-            if (a < b)
+            if (b > a && b > c)
             {
-                if (c < b)
-                {
-                    a = b;
-                    b = oldA;
-                    return;
-                }
+                a = b;
+                b = oldA;
+                return;
             }
             
-            if (a < c)
+            if (c > a)
             {
                 a = c;
                 c = oldA;
