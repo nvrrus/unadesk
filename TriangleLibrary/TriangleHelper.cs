@@ -52,10 +52,8 @@
             {
                 a = b;
                 b = oldA;
-                return;
             }
-            
-            if (c > a)
+            else if (c > a)
             {
                 a = c;
                 c = oldA;
