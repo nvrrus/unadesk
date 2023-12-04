@@ -54,14 +54,11 @@
                 {
                     a = b;
                     b = oldA;
-                }
-                else
-                {
-                    a = c;
-                    c = oldA;
+                    return;
                 }
             }
-            else if (a < c)
+            
+            if (a < c)
             {
                 a = c;
                 c = oldA;
